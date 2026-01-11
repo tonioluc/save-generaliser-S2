@@ -1,0 +1,2 @@
+nom : Mimi , prix : 23 
+nom : Mimi2 , prix : 10000 
