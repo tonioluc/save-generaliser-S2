@@ -1,1 +1,2 @@
 meuble : Table , nbChambre : 15 , etage : 2 , logement : test 
+etage : 12 , nbChambre : 3 , meuble : Chaise , logement : wqeqw 

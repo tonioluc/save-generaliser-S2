@@ -25,5 +25,6 @@
     String fileName = saveDir + java.io.File.separator + simpleName + ".txt";
     Save sauver = new Save();
     sauver.sauvegarde(fileName,input,fieldName);
-    response.sendRedirect("index.jsp");
+    String savedRelative = "save-files/" + simpleName + ".txt";
+    response.sendRedirect("index.jsp?saved=1&file=" + savedRelative);
 %>

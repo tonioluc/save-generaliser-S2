@@ -16,6 +16,10 @@
     // vect.add(d);
     vect.add(e);
 %>
+<%
+    String saved = request.getParameter("saved");
+    String savedFile = request.getParameter("file");
+%>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,6 +30,15 @@
 </head>
 <body>
     <div class="container ">
+        <% if (saved != null) { %>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="alert alert-success" role="alert">
+                        Sauvegarde réussie dans <strong><%= savedFile %></strong>, voir le contenu du dossier save-files
+                    </div>
+                </div>
+            </div>
+        <% } %>
     <div class="col-md-3">
     <%-- Colonne vide --%>
     </div>
